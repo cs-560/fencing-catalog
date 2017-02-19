@@ -51,6 +51,8 @@ where they are attached to another cable and in turn, connects with the scoring 
 depending on the type of socket being used in the weapon: the "two-prong" type, or the "bayonet" type.
 - $15
 
+## Credits 
+
 In these descriptions, we used information from:
 - https://www.absolutefencinggear.com/
 - http://www.dominionfencing.org/gear.html
