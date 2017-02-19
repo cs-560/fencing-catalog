@@ -9,7 +9,7 @@ a test before being used in competition: the 14K-punch test.
 - This is our Absolute Standard practice foil, it comes standard with Absolute parts and a variety of grip styles and sizes. 
 - $45
 
-##### Electric Saber - 173484
+##### Electric Sabre - 173484
 - Advanced Practice Sabre comes with  parts and the Advanced S2000 blade.
 - $46
 
