@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="catalogItems_array" formatted = "false">
+        <item>Epee Mask|001|This mask with no conductive bib is a good choice for beginners as a practice mask,
+            and can be also be used in Epee competitions.
+            |5000</item>
+        <item>Foil Mask|002|This foil mask with conductive bib is CE Level 1 certified, and is suitable for all competitions within the US.
+            |7000</item>
+        <item>Sabre Mask|003|This sabre mask is CE Level 1 certified, and is suitable for all competitions within the US.
+            |8600</item>
+        <item>Electrical Foil|004|Standard Foil with electric scoring parts.
+            |4200</item>
+        <item>Electric Sabre|005|Standard Sabre with electric scoring parts.
+            |5000</item>
+        <item>Electric Epee|006|Standard Epee with electric scoring parts.
+            |5300
+        </item>
+        <item>Jacket|007|CE Certified with Level 1 Protection. The jackets are made of a (65%) Polyester / (35%) Cotton blend that offers much better quality and protection than the Cotton jackets.
+            |5500
+        </item>
+        <item>
+            Glove|008|The Soft Leather 3-W glove is made from a soft sheepskin and is comfortable to wear. It can be used in all three weapons!
+            |2000
+        </item>
+        <item>
+            Pants|009|These fully stretchy pants are soft, stretchy, yet providing protection you need. Comes with inside lining. Now verified 350N protective!
+            |4400
+        </item>
+        <item>Plastron|010|This is an inner sleeve worn under the jacket when fencing. In case you should be hit with a broken blade, it is your last line of defense between the broken end of the blade and your skin (and the squishy organ-stuff underneath that). A plastron is required to be worn during competition.
+            |2000
+        </item>
+        <item>
+            Chest Protector(Women)|011|A plastic chest guard designed for women that offers maximum protection.
+            Women are required, in addition to a plastron, to wear rigid breast protection over both breasts.
+            |2500"
+        </item>
+        <item>
+            Chest Protector(Men / Kids)|012|A plastic chest guard that offers maximum protection and is perfect for young children or adults who want extra protection from bruising.
+            |2500"
+        </item>
+        <item>Foil Lame|013|The lame is a conductive piece of material that is connected to the scoring box via a body cord, and enables electric scoring.
+            This lame is for Foil.
+            |7000</item>
+        <item>Sabre Lame|014|The lame is a conductive piece of material that is connected to the scoring box via a body cord, and enables electric scoring.
+            This lame is for Sabre.
+            |9500</item>
+        <item>"Body Cord (two-prong)|015|Body cords attach to the plug behind the weapons guard, run up the fencer\'s arm, and out the back of the jacket, where they are attached to another cable and in turn, connects with the scoring box.
+            This body cord is for Foil and Sabre.
+            |1500
+        </item>
+        <item>"Body Cord (three-prong)|016|Body cords attach to the plug behind the weapons guard, run up the fencer\'s arm, and out the back of the jacket, where they are attached to another cable and in turn, connects with the scoring box.
+            This body cord is for Epee.
+            |1500
+        </item>
+        <item>"Mask Cord|017|Mask cords connect the mask to the lame, so targets on the mask can trigger a hit.
+            Mask cords are essential for Foil and Sabre competition.
+            |650
+        </item>
+    </string-array>
+
+</resources>
