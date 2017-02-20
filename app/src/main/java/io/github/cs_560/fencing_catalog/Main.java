@@ -56,6 +56,11 @@ public class Main extends AppCompatActivity {
         return newList;
     }
 
+    public void openCart(View view){
+        Intent intent = new Intent(Main.this, CartActivity.class);
+        startActivity(intent);
+    }
+
     public catalogueItem getItem(int num){
         return itemsList.get(num);
     }
