@@ -9,7 +9,7 @@ More info to come
 
 For the images and descriptionsof each item, we relied on these websites:
 
-- [Absolute FEncing Gear](https://www.absolutefencinggear.com/)
+- [Absolute Fencing Gear](https://www.absolutefencinggear.com/)
 - [Dominion Fencing](http://www.dominionfencing.org/gear.html)
 - [Amazon](http://www.amazon.com)
 
