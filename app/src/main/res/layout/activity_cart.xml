@@ -11,9 +11,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="io.github.cs_560.fencing_catalog.CartActivity">
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <android.support.v7.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -36,6 +39,36 @@
             android:layout_alignParentStart="true"
             android:onClick="close"
             app:srcCompat="@drawable/ic_back" />
+        <Button
+            android:text="Check Out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkoutBtn"
+            android:layout_alignParentRight="true"
+            android:onClick="CheckOut"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <Button
+            android:text="Empty Cart"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/empty"
+            android:onClick="emptyCart"/>
+        <TextView
+            android:text="Cart is Empty"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:id="@+id/total"
+            android:padding="6dp"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/empty"
+            android:layout_toEndOf="@+id/empty" />
+
     </RelativeLayout>
     <ListView
         android:id="@+id/cartListView"
@@ -44,4 +77,5 @@
         android:layout_below="@+id/toolbar"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
 </LinearLayout>

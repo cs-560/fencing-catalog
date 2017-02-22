@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="io.github.cs_560.fencing_catalog.Main">
+    tools:context="io.github.cs_560.fencing_catalog.MainActivity">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"

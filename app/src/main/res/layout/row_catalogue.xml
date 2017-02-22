@@ -1,10 +1,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="?android:attr/listPreferredItemHeight"
-    android:padding="6dip" >
+    android:padding="3dip" >
 
     <ImageView
-        android:id="@+id/image"
+        android:id="@+id/imageCat"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
         android:layout_alignParentBottom="true"
@@ -15,28 +15,36 @@
         />
 
     <TextView
-        android:id="@+id/priceLine"
-        android:layout_width="fill_parent"
-        android:layout_height="26dip"
+        android:id="@+id/priceCat"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_toRightOf="@id/image"
         android:ellipsize="marquee"
         android:singleLine="true"
         android:text="Description"
-        android:textSize="12sp" />
-
+        android:textSize="15sp" />
     <TextView
-        android:id="@+id/firstLine"
+        android:id="@+id/idCat"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/imageCat"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Description"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/nameCat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/priceLine"
+        android:layout_above="@id/priceCat"
         android:layout_toLeftOf="@id/itemPrice"
         android:layout_alignParentTop="true"
         android:layout_alignWithParentIfMissing="true"
-        android:layout_toRightOf="@id/image"
+        android:layout_toRightOf="@id/imageCat"
         android:gravity="center_vertical"
         android:text="Example application"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
 
 </RelativeLayout>
