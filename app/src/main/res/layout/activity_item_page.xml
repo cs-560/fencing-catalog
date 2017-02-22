@@ -10,7 +10,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="io.github.cs_560.fencing_catalog.ItemPage">
+    tools:context="io.github.cs_560.fencing_catalog.ItemPageActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -34,7 +34,8 @@
             android:layout_marginEnd="10dp"
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:onClick="checkCart" />
 
         <ImageButton
             android:layout_width="50dp"
@@ -55,6 +56,9 @@
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical">
+
+
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="100dp">
@@ -64,60 +68,84 @@
                 android:layout_width="100dp"
                 app:srcCompat="@mipmap/ic_epee"
                 android:id="@+id/itemPic" />
+
+            <TextView
+                android:text="No. Id"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/itemPic"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/itemId"
+                android:textSize="20sp"/>
             <TextView
                 android:text="itemPrice"
-                android:layout_width="fill_parent"
+                android:layout_width="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_height="30dp"
                 android:id="@+id/itemPrice"
-                android:layout_toRightOf="@id/itemPic" />
+                android:layout_alignParentRight="true"
+                android:textSize="22sp"/>
             <TextView
                 android:text="itemName"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/itemName"
                 android:layout_toRightOf="@id/itemPic"
-                android:layout_above="@id/itemPrice"/>
+                android:layout_above="@id/itemPrice"
+                android:textSize="25sp"/>
+
         </RelativeLayout>
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="347dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:id="@+id/itemScroll">
-
-            <TextView
-                android:text="itemDescription"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/itemDescription" />
-        </ScrollView>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
             android:orientation="horizontal"
             >
-            <EditText
+
+            <TextView
+                android:text="Quantity"
                 android:layout_width="wrap_content"
-                android:text="Enter Quantity"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:textSize="20sp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="50dp"
                 android:inputType="number"
                 android:ems="10"
-                android:id="@+id/editText"
+                android:text="1"
+                android:id="@+id/editQuant"
                 android:layout_height="match_parent"
                 android:textSize="20sp"
-                />
+                android:layout_weight="0.5" />
 
             <Button
                 android:text="Add to Cart"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:id="@+id/button"
-                android:layout_weight="1" />
+                android:layout_weight="1.33"
+                android:onClick="onClick_AddtoCart"
+                android:elevation="1dp" />
 
         </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="347dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/itemScroll"
+            android:padding="6dip">
+
+            <TextView
+                android:text="itemDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemDescription"
+                android:textSize="18sp"/>
+        </ScrollView>
+
     </LinearLayout>
 
 </LinearLayout>

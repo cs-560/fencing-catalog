@@ -8,6 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 /**
@@ -28,16 +30,17 @@ public class catalogueAdapter extends ArrayAdapter<catalogueItem> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.row_catalogue, parent, false);
         }
         // Lookup view for data population
-        TextView tvName = (TextView) convertView.findViewById(R.id.firstLine);
-        TextView tvPrice = (TextView) convertView.findViewById(R.id.priceLine);
+        TextView tvName = (TextView) convertView.findViewById(R.id.nameCat);
+        TextView tvPrice = (TextView) convertView.findViewById(R.id.priceCat);
         // Populate the data into the template view using the data object
-        ImageView ivPic = (ImageView) convertView.findViewById(R.id.image);
-
+        ImageView ivPic = (ImageView) convertView.findViewById(R.id.imageCat);
+        TextView tvId = (TextView) convertView.findViewById(R.id.idCat);
         tvName.setText(cItem.name);
+        tvId.setText(String.format("no.%04d",cItem.id));
         String priceString = "$  " + String.valueOf(cItem.price100/100) + "." + String.valueOf(cItem.price100%100);
         tvPrice.setText(priceString);
 
-        ivPic.setImageResource(cItem.res_id);
+        ivPic.setImageResource(cItem.pic_id);
         // Return the completed view to render on screen
         return convertView;
     }
